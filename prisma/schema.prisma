@@ -1,0 +1,21 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model ServiceListing {
+  id              String   @id @default(uuid())
+  providerAgentId String   @map("provider_agent_id")
+  serviceName     String   @map("service_name")
+  description     String
+  tags            String[]
+  pricePerRequest Float    @map("price_per_request")
+  endpointUrl     String   @map("endpoint_url")
+  createdAt       DateTime @default(now()) @map("created_at")
+  updatedAt       DateTime @updatedAt @map("updated_at")
+
+  @@map("service_listings")
+}
