@@ -1,4 +1,4 @@
-import { ICapabilityRepository } from '../../domain/interfaces/ICapabilityRepository';
+import { ICapabilityRepository } from '../../domain/ports/ICapabilityRepository';
 import { CreateListingInput, ServiceListing } from '../../domain/entities/ServiceListing';
 
 export class RegisterCapability {

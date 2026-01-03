@@ -1,6 +1,6 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { RegisterCapability } from '../../application/usecases/RegisterCapability';
-import { ICapabilityRepository } from '../../domain/interfaces/ICapabilityRepository';
+import { ICapabilityRepository } from '../../lib/capability-broker/domain/ports/ICapabilityRepository';
 
 describe('RegisterCapability', () => {
     let useCase: RegisterCapability;

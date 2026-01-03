@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { FindAgents } from '@/application/usecases/FindAgents';
+import { FindAgents } from '@/lib/capability-broker/application/usecases/FindAgents';
 import { PostgresCapabilityRepository } from '@/infrastructure/repositories/PostgresCapabilityRepository';
 
 const repo = new PostgresCapabilityRepository();

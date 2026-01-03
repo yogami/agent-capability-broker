@@ -1,6 +1,6 @@
 import { describe, it, expect, vi } from 'vitest';
 import { FindAgents } from '../../application/usecases/FindAgents';
-import { ICapabilityRepository } from '../../domain/interfaces/ICapabilityRepository';
+import { ICapabilityRepository } from '../../lib/capability-broker/domain/ports/ICapabilityRepository';
 
 describe('FindAgents', () => {
     it('should return matching listings', async () => {

@@ -1,6 +1,6 @@
 import prisma from '../db';
-import { ICapabilityRepository } from '../../domain/interfaces/ICapabilityRepository';
-import { CreateListingInput, ServiceListing } from '../../domain/entities/ServiceListing';
+import { ICapabilityRepository } from '../../lib/capability-broker/domain/ports/ICapabilityRepository';
+import { CreateListingInput, ServiceListing } from '../../lib/capability-broker/domain/entities/ServiceListing';
 
 export class PostgresCapabilityRepository implements ICapabilityRepository {
     async createListing(input: CreateListingInput): Promise<ServiceListing> {

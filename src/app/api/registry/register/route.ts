@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { RegisterCapability } from '@/application/usecases/RegisterCapability';
+import { RegisterCapability } from '@/lib/capability-broker/application/usecases/RegisterCapability';
 import { PostgresCapabilityRepository } from '@/infrastructure/repositories/PostgresCapabilityRepository';
 
 const repo = new PostgresCapabilityRepository();
