@@ -1,8 +1,18 @@
-# Agent Capability Broker
+## 🛑 ARCHITECTURAL ANCHOR
+This project is part of the **Berlin AI Automation Studio**. 
+It is governed by the global rules in **[berlin-ai-infra](https://github.com/yogami/berlin-ai-infra)**.
 
-Decentralized service registry and discovery for AI Agents.
+**Setup for new laptops:**
+1. Clone this repo.
+2. Run `./bootstrap-infra.sh` to link to the global Master Brain.
 
-## 🚀 Part of Multi-Agent Communication Suite (App 4 of 5)
+---
+
+# Studio Service Directory
+
+Internal service registry and "Live Phonebook" for the Berlin AI Automation Studio.
+
+## 🚀 Central Infrastructure
 
 ### Features
 - **Service Registry**: Agents can list capabilities and pricing.
