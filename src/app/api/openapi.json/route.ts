@@ -9,9 +9,9 @@ export async function GET() {
     const spec = {
         openapi: '3.0.3',
         info: {
-            title: 'Agent Capability Broker API',
+            title: 'Studio Service Directory API',
             version: '1.0.0',
-            description: 'Dynamic agent discovery, service registration, and capability listing for the agent ecosystem.'
+            description: 'Internal service registry and Live Phonebook for the Berlin AI Automation Studio.'
         },
         servers: [
             { url: 'http://localhost:3000', description: 'Local development' }
