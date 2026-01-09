@@ -17,5 +17,5 @@ model ServiceListing {
   createdAt       DateTime @default(now()) @map("created_at")
   updatedAt       DateTime @updatedAt @map("updated_at")
 
-  @@map("service_listings")
+  @@map("am_service_listings")
 }
